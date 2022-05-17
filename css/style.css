@@ -55,14 +55,13 @@
 }
 .navber {
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
-
-  padding: 10px 0;
-  background-color: black;
+  padding: 1.2vw 0;
+  background-color: rgb(0, 0, 0);
 }
 .navber .content {
-  height: 42px;
+  height: 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,7 +91,7 @@
 
 .menu-list li a {
   color: rgb(194, 194, 194);
-  font-size: 18px;
+  font-size: 0.9vw;
   font-family: Raleway;
   font-weight: 500;
   margin-left: 25px;
@@ -119,9 +118,10 @@
 .scroll-progress {
   width: 0%;
   background-color: #0b83fe;
-  height: 7px;
+  height: 1.9vw;
+  z-index: 1 !important;
   position: fixed;
-  top: 60px;
+  top: 2.8vw;
   left: 0;
 }
 /* Drawer Start */
@@ -136,15 +136,16 @@ menu menu span {
   justify-content: space-between;
 }
 .text-logo img {
+  margin-top: 0.6vw;
   width: 5vh;
   height: 5vh;
   padding: 0.5vh 0.5vh;
 }
 .text-logo h1 {
-  font-size: 2.4vh;
+  font-size: 2vh;
   transform: rotate(270deg);
-  width: 15vh;
-  height: 10vh;
+  width: 13.6vh;
+  height: 8vh;
   font-family: Aceh;
 }
 .menuTitel {
@@ -203,8 +204,7 @@ input[type="reset"] {
 
 .nav,
 .nav .nav {
-  font-size: 14px;
-  height: 70vh;
+  min-height: 64vh;
   padding-top: 30px;
   position: fixed;
   top: 120px;
@@ -306,7 +306,7 @@ nav.left-navigation label.menu-text > h1 {
 
 .nav menu {
   margin: 0;
-  padding: 0;
+  padding-bottom: 2vh;
 }
 
 .nav nav label.menu-toggle,
@@ -341,7 +341,7 @@ input[type="checkbox"]:checked
 }
 
 main {
-  margin: 0 2vw;
+  margin: 0 1.4vw;
 }
 
 .introduction {
@@ -363,6 +363,7 @@ main {
 }
 .hero-top {
   width: 100%;
+  margin: 0vw 2vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -376,16 +377,17 @@ main {
 }
 .hero-text {
   width: 25%;
+  text-align: end;
 }
 .hero-text p {
   color: #a1a1a1;
   font-family: Aceh;
-  font-size: 1.7rem;
+  font-size: 1.4vw;
 }
 .hero-text h1 {
   color: #a1a1a1;
   font-family: AcehRegular;
-  font-size: 2.7rem;
+  font-size: 2vw;
 }
 .hero-text h1 span {
   color: #0b83fe;
@@ -424,51 +426,113 @@ main {
 }
 .button {
   background: #25272d;
-  margin: 10px 79px;
-  padding: 11px 8px;
+  margin-top: 1vw;
+  padding: 0.8vw 1vw;
   width: 60%;
   float: right;
-  height: 50px;
+  height: 2.7vw;
   overflow: hidden;
   text-align: center;
   transition: 0.2s;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 4vw;
   box-shadow: 0px 1px 2px rgb(0 0 0 / 20%);
 }
 
 .btnTwo {
   position: relative;
-  width: 110%;
-  height: 50px;
-  margin-top: -38px;
-  padding-top: 2px;
-  border-radius: 25px;
+  width: 115%;
+  height: 2.7vw;
+  margin-top: -2.1vw;
+  padding-top: 0.1vw;
+  border-radius: 4vw;
   background: #0b83fe;
-  left: -500px;
+  left: -60vw;
   transition: 1s;
 }
 .btnText {
-  font-size: 1.4rem !important;
+  font-size: 1.2vw !important;
   color: white !important;
   transition: 0.3s;
 }
 .btnText2 {
-  font-size: 1.4rem !important;
-  margin-top: 14px;
+  font-size: 1.2vw !important;
+  margin-top: 0.6vw;
   margin-right: 0px;
   color: white !important;
 }
 .button:hover .btnTwo {
   /*When hovering over .button change .btnTwo*/
-  left: -10px;
+  left: -1vw;
 }
 
 .button:active {
   /*Clicked and held*/
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
 }
+/* circle progress bar Start */
+.peogessBarSection {
+  width: 20%;
+  display: flex;
+  text-align: center;
+  font-size: 1.1vw;
+  color: white;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: Geometria;
+}
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
 
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+.hero-bottom {
+  width: 100%;
+  display: flex;
+  padding: 0 14vw;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.circle-progress-bar[role="progressbar"] {
+  --size: 6vw;
+  --fg: #5aaaff;
+  --bg: #0d3e73cd;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      #030b12 90%,
+      transparent 0 99.9%,
+      rgb(0, 0, 0) 0
+    ),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 4);
+  color: var(--fg);
+  margin-bottom: 2vw;
+}
+
+/* circle progress bar End */
 /* Hero End */
 /* Smart Phone Start*/
 @media screen and (max-width: 767px) {
