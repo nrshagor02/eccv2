@@ -1,0 +1,11 @@
+/* Webfont: Aceh-SemiBold */@font-face {
+    font-family: 'AcehSemBd';
+    src: url('Aceh-SemiBold.eot'); /* IE9 Compat Modes */
+    src: url('Aceh-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aceh-SemiBold.woff') format('woff'), /* Modern Browsers */
+         url('Aceh-SemiBold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

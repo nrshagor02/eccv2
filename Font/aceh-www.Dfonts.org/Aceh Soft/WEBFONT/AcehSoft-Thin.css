@@ -1,0 +1,11 @@
+/* Webfont: AcehSoft-Thin */@font-face {
+    font-family: 'AcehSoftThin';
+    src: url('AcehSoft-Thin.eot'); /* IE9 Compat Modes */
+    src: url('AcehSoft-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AcehSoft-Thin.woff') format('woff'), /* Modern Browsers */
+         url('AcehSoft-Thin.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

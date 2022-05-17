@@ -1,0 +1,11 @@
+/* Webfont: AcehSoft-MediumOblique */@font-face {
+    font-family: 'AcehSoftMed';
+    src: url('AcehSoft-Medium Oblique.eot'); /* IE9 Compat Modes */
+    src: url('AcehSoft-Medium Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AcehSoft-Medium Oblique.woff') format('woff'), /* Modern Browsers */
+         url('AcehSoft-Medium Oblique.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

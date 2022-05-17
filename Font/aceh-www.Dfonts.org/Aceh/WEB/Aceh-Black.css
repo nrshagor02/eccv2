@@ -1,0 +1,11 @@
+/* Webfont: Aceh-Black */@font-face {
+    font-family: 'AcehBlack';
+    src: url('Aceh-Black.eot'); /* IE9 Compat Modes */
+    src: url('Aceh-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aceh-Black.woff') format('woff'), /* Modern Browsers */
+         url('Aceh-Black.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

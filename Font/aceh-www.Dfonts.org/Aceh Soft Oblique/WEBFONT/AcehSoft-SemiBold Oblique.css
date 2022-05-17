@@ -1,0 +1,11 @@
+/* Webfont: AcehSoft-SemiBoldOblique */@font-face {
+    font-family: 'AcehSoftSemBd';
+    src: url('AcehSoft-SemiBold Oblique.eot'); /* IE9 Compat Modes */
+    src: url('AcehSoft-SemiBold Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AcehSoft-SemiBold Oblique.woff') format('woff'), /* Modern Browsers */
+         url('AcehSoft-SemiBold Oblique.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

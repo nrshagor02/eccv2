@@ -1,0 +1,11 @@
+/* Webfont: Aceh-Bold */@font-face {
+    font-family: 'Aceh';
+    src: url('Aceh-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Aceh-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aceh-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Aceh-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

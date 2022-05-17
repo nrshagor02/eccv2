@@ -1,0 +1,11 @@
+/* Webfont: AcehSoft-ExtraLight */@font-face {
+    font-family: 'AcehSoftExtLt';
+    src: url('AcehSoft-ExtraLight.eot'); /* IE9 Compat Modes */
+    src: url('AcehSoft-ExtraLight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AcehSoft-ExtraLight.woff') format('woff'), /* Modern Browsers */
+         url('AcehSoft-ExtraLight.ttf') format('truetype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
