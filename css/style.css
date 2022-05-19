@@ -292,10 +292,6 @@ nav.left-navigation label.menu-text > h1 {
   transform: rotate(0) translateY(0);
 }
 
-.nav label.menu-toggle {
-  margin-top: -3vh;
-}
-
 .nav label.menu-toggle > span:after {
   transform: rotate(135deg) translateY(-0.6vh) translateX(0.2vh);
 }
@@ -304,6 +300,9 @@ nav.left-navigation label.menu-text > h1 {
   transform: rotate(-135deg) translateY(0.6vh) translateX(0.2vh);
 }
 
+.nav label.menu-toggle {
+  margin-top: -3vh;
+}
 .nav menu {
   margin: 0;
   padding-bottom: 2vh;
@@ -356,10 +355,12 @@ main {
 /* Hero start */
 #hero {
   width: 100%;
-  height: 100vh;
+  height: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5vw;
+  padding-bottom: 3vw;
 }
 .hero-top {
   width: 100%;
@@ -370,10 +371,13 @@ main {
   justify-content: center;
   align-items: center;
 }
-.hero-img img {
-  width: 80%;
+.hero-video {
+  width: 50%;
   padding: 5vh;
-  opacity: 0.6;
+  opacity: 0.8;
+}
+.hero-video video {
+  width: 40vw;
 }
 .hero-text {
   width: 25%;
@@ -509,7 +513,7 @@ main {
   align-items: center;
 }
 .circle-progress-bar[role="progressbar"] {
-  --size: 6vw;
+  --size: 5vw;
   --fg: #5aaaff;
   --bg: #0d3e73cd;
   --pgPercentage: var(--value);
@@ -521,19 +525,124 @@ main {
   place-items: center;
   background: radial-gradient(
       closest-side,
-      #030b12 90%,
-      transparent 0 99.9%,
+      #120303 93%,
+      transparent 0 99.99%,
       rgb(0, 0, 0) 0
     ),
     conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
   font-family: Helvetica, Arial, sans-serif;
   font-size: calc(var(--size) / 4);
-  color: var(--fg);
+  color: white;
   margin-bottom: 2vw;
 }
 
 /* circle progress bar End */
 /* Hero End */
+
+/* Sticky Section Start  */
+#stickySection {
+  width: 100%;
+  margin-top: 200px;
+}
+.sticky {
+  top: 0;
+  display: flex;
+  margin-top: 20px;
+  padding: 0px 10vw;
+  flex-direction: row;
+  margin-bottom: 5rem;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.sticky-right {
+  display: flex;
+  flex-direction: row;
+  margin-top: 310px;
+}
+
+/* PREMIER BLOC */
+
+.container-1 {
+  display: flex;
+  margin-top: 12vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  left: 9vw;
+  position: relative;
+  bottom: 0;
+  height: 100%;
+  padding-bottom: 5vh;
+  opacity: 0.5;
+}
+
+/* DEUXIEME BLOC */
+
+.container-2 {
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+  left: 5vw;
+  bottom: 0;
+  height: 100%;
+  padding-bottom: 5vh;
+}
+
+/* TROISIEME BLOC */
+
+.container-3 {
+  margin-top: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  bottom: 0;
+  position: relative;
+  padding-bottom: 5vh;
+  opacity: 0.5;
+}
+
+/* IMAGES */
+
+.image {
+  min-width: 120%;
+  height: 100%;
+  overflow: hidden;
+  padding: 20px 0px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s ease;
+}
+
+.sticky-left {
+  margin: 0;
+  width: 50%;
+  justify-content: center;
+  top: 10vw;
+  position: sticky;
+}
+.sticky-left img {
+  width: 30vw;
+}
+
+/* Sticky Section End */
 /* Smart Phone Start*/
 @media screen and (max-width: 767px) {
   .logo {

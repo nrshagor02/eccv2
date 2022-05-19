@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "beauty_dreamregular";
+  src: url("Font/beauty_dream-webfont.woff2") format("woff2"),
+    url("Font/beauty_dream-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  cursor: none;
+  background-color: #ccc;
+  background-color: #dfdbe5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* CURSOR */
+
+.cursor {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  border: black solid 1px;
+  border-radius: 50%;
+  z-index: 50;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.active {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+}
+
+/* NAV */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15vh;
+  z-index: 10;
+}
+nav h1 {
+  font-family: "beauty_dreamregular";
+  font-size: 6em;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/* PREMIER BLOC */
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  height: 3000px;
+}
+
+/* DEUXIEME BLOC */
+
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  position: fixed;
+  left: calc(100% / 3);
+  bottom: 0;
+  height: 3000px;
+  padding-bottom: 15vh;
+}
+
+/* TROISIEME BLOC */
+
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  height: 3000px;
+}
+
+/* IMAGES */
+
+.image {
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1, 1.1);
+}

@@ -21,6 +21,8 @@ function scrollProgress() {
     (currentDistanceFromTop / (totalHeightOfWebPage - windowHeight)) * 100;
   scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
 }
+let b = scrollProgress();
+console.log(b);
 document.addEventListener("scroll", scrollProgress);
 // Drawer Text change
 var cb = document.getElementById("left-menu");
@@ -36,3 +38,11 @@ cb.addEventListener(
   },
   false
 );
+
+// Sticky Image
+
+$(window).on("scroll", function () {
+  $(".container-1").css("margin-top", $(window).scrollTop() * -0.1);
+  $(".container-2").css("margin-top", $(window).scrollTop() * -0.2);
+  $(".container-3").css("margin-top", $(window).scrollTop() * -0.7);
+});
