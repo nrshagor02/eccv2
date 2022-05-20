@@ -542,15 +542,14 @@ main {
 /* Sticky Section Start  */
 #stickySection {
   width: 100%;
-  margin-top: 200px;
+  margin-top: 8vw;
 }
 .sticky {
   top: 0;
   display: flex;
-  margin-top: 20px;
+  margin-top: 10vw;
   padding: 0px 10vw;
   flex-direction: row;
-  margin-bottom: 5rem;
   align-content: center;
   align-items: flex-start;
   justify-content: center;
@@ -559,14 +558,14 @@ main {
 .sticky-right {
   display: flex;
   flex-direction: row;
-  margin-top: 310px;
+  margin-top: 60vw;
 }
 
 /* PREMIER BLOC */
 
 .container-1 {
   display: flex;
-  margin-top: 12vw;
+  top: 1vw;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -576,14 +575,14 @@ main {
   position: relative;
   bottom: 0;
   height: 100%;
-  padding-bottom: 5vh;
+  padding-bottom: 5vw;
   opacity: 0.5;
 }
 
 /* DEUXIEME BLOC */
 
 .container-2 {
-  margin-top: 5vw;
+  top: 5vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -591,17 +590,17 @@ main {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  z-index: 1;
   left: 5vw;
   bottom: 0;
   height: 100%;
-  padding-bottom: 5vh;
+  padding-bottom: 5vw;
 }
 
 /* TROISIEME BLOC */
 
 .container-3 {
-  margin-top: 2vw;
+  z-index: -1;
+  top: 50vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -611,7 +610,7 @@ main {
   box-sizing: border-box;
   bottom: 0;
   position: relative;
-  padding-bottom: 5vh;
+  padding-bottom: 5vw;
   opacity: 0.5;
 }
 
@@ -621,7 +620,7 @@ main {
   min-width: 120%;
   height: 100%;
   overflow: hidden;
-  padding: 20px 0px;
+  padding: 1vw 0;
 }
 .image img {
   width: 100%;
@@ -632,14 +631,27 @@ main {
 }
 
 .sticky-left {
+  color: white;
   margin: 0;
   width: 50%;
   justify-content: center;
   top: 10vw;
   position: sticky;
 }
+.sticky-left p {
+  font-size: 1.3vw;
+  font-family: GeometriaMedium;
+}
+.sticky-left h1 {
+  font-size: 1.8vw;
+  font-family: RalewayBlod;
+}
+.sticky-left h1 span {
+  color: #0b84fe;
+}
 .sticky-left img {
   width: 30vw;
+  padding: 3vw 0 10vw 0;
 }
 
 /* Sticky Section End */

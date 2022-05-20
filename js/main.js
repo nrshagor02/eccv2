@@ -20,9 +20,10 @@ function scrollProgress() {
   const scrolledPercentage =
     (currentDistanceFromTop / (totalHeightOfWebPage - windowHeight)) * 100;
   scrollProgressElement.style.width = Math.round(scrolledPercentage) + "%";
+
+  return Math.round(currentDistanceFromTop);
 }
-let b = scrollProgress();
-console.log(b);
+
 document.addEventListener("scroll", scrollProgress);
 // Drawer Text change
 var cb = document.getElementById("left-menu");
@@ -42,7 +43,11 @@ cb.addEventListener(
 // Sticky Image
 
 $(window).on("scroll", function () {
-  $(".container-1").css("margin-top", $(window).scrollTop() * -0.1);
-  $(".container-2").css("margin-top", $(window).scrollTop() * -0.2);
-  $(".container-3").css("margin-top", $(window).scrollTop() * -0.7);
+  const start = scrollProgress();
+  console.log(start);
+  if (start > 600 && start < 1450) {
+    $(".container-1").css("margin-top", $(window).scrollTop() * -0.067 + "vw");
+    $(".container-2").css("margin-top", $(window).scrollTop() * -0.081 + "vw");
+    $(".container-3").css("margin-top", $(window).scrollTop() * -0.164 + "vw");
+  }
 });
