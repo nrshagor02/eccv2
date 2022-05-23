@@ -474,8 +474,7 @@ main {
   /*Clicked and held*/
   box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
 }
-/* circle progress bar Start */
-.peogessBarSection {
+circle progress bar Start .peogessBarSection {
   width: 20%;
   display: flex;
   text-align: center;
@@ -622,6 +621,7 @@ main {
   overflow: hidden;
   padding: 1vw 0;
 }
+
 .image img {
   width: 100%;
   height: 100%;
@@ -629,7 +629,19 @@ main {
   object-position: center;
   transition: 0.3s ease;
 }
-
+.laptop {
+  margin: 0.67vw 0vw 0vw 0.5vw;
+  max-width: 29vw;
+  position: absolute;
+  overflow: scroll;
+  overflow-x: hidden;
+  max-height: 16.5vw;
+  max-height: 16.5vw;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
 .sticky-left {
   color: white;
   margin: 0;
@@ -638,6 +650,60 @@ main {
   top: 10vw;
   position: sticky;
 }
+
+.mouse-img {
+  margin-top: -4vw;
+  padding: 0.2vw 11vw 0vw 1vw;
+  width: 2vw;
+  float: right;
+  height: 4.7vw;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.2s;
+  cursor: pointer;
+}
+img#mouse-img {
+  padding: 1.5vw;
+  max-width: 6.7vw !important;
+  min-width: 6.7vw !important;
+}
+
+.mouse-text {
+  position: relative;
+  bottom: 4.7vw;
+  left: 1.8vw;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+.mouse-text p {
+  font-size: 0.9vw !important;
+}
+/* .btnText {
+  font-size: 1.2vw !important;
+  color: white !important;
+  transition: 0.3s;
+}
+.btnText2 {
+  font-size: 1.2vw !important;
+  margin-top: 0.6vw;
+  margin-right: 0px;
+  color: white !important;
+} */
+.mouse-img:hover .mouse-text {
+  /*When hovering over .button change .btnTwo*/
+  bottom: 3vw;
+  left: 2vw;
+  transform: scale(0.8, 0.8);
+}
+img#mouse-img:hover {
+  /*When hovering over .button change .btnTwo*/
+  transform: rotate(-5deg);
+}
+
+.mouse-img:active {
+  /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0, 0, 0, 0.3);
+}
 .sticky-left p {
   font-size: 1.3vw;
   font-family: GeometriaMedium;
@@ -645,13 +711,13 @@ main {
 .sticky-left h1 {
   font-size: 1.8vw;
   font-family: RalewayBlod;
+  margin-bottom: 2vw;
 }
 .sticky-left h1 span {
   color: #0b84fe;
 }
 .sticky-left img {
-  width: 30vw;
-  padding: 3vw 0 10vw 0;
+  min-width: 30vw;
 }
 
 /* Sticky Section End */
